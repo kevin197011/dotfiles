@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Copyright (c) 2023 kk
 #
 # This software is released under the MIT License.
@@ -9,6 +11,7 @@ task default: %w[backup git_push]
 
 task :backup do
   sh "brew bundle dump --file=#{current_path}/config/Brewfile --force"
+  sh 'rubocop -A'
 end
 
 task :git_push do

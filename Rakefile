@@ -19,3 +19,7 @@ task :git_push do
   sh 'git commit -m "Update."'
   sh 'git push origin main'
 end
+
+task :bootstrap do
+  sh 'bash ./bootstrap.sh'
+end

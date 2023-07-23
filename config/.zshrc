@@ -8,7 +8,31 @@ source ~/.env
 ZSH_THEME="agnoster"
 
 # ZSH plugins
-plugins=(git zsh-syntax-highlighting)
+plugins=(git zsh-syntax-highlighting rand-quote gitignore cp z command-not-found zsh-autosuggestions colored-man-pages)
+
+# ZSH zplug
+if [[ -f ~/.zplug/init.zsh ]] {
+  source ~/.zplug/init.zsh
+
+  zplug "zsh-users/zsh-syntax-highlighting"
+  zplug "zsh-users/zsh-autosuggestions"
+  zplug "supercrabtree/k"
+  zplug "denisidoro/navi"
+  zplug "MichaelAquilina/zsh-you-should-use"
+  zplug "changyuheng/zsh-interactive-cd"
+  zplug "SleepyBag/zsh-confer"
+
+  zplug "Powerlevel9k/powerlevel9k", from:github, as:theme, if:"[[ $ZSH_THEME_STYLE == 9k ]]"
+  zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh-theme, from:github, as:theme, if:"[[ $ZSH_THEME_STYLE == spaceship ]]"
+  zplug "caiogondim/bullet-train.zsh", use:bullet-train.zsh-theme, from:github, as:theme, if:"[[ $ZSH_THEME_STYLE == bullet ]]"
+  zplug "skylerlee/zeta-zsh-theme", from:github, as:theme, if:"[[ $ZSH_THEME_STYLE == zeta ]]"
+
+  if ! zplug check --verbose; then
+      echo 'Run "zplug install" to install'
+  fi
+  # Then, source plugins and add commands to $PATH
+  zplug load
+}
 
 # Load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
@@ -48,3 +72,5 @@ source <(ng completion script)
 source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 
+# For funny things
+quote | cowsay

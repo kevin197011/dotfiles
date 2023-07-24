@@ -4,6 +4,7 @@
 #
 # This software is released under the MIT License.
 # https://opensource.org/licenses/MIT
+require 'rake'
 
 current_path = __dir__
 
@@ -21,6 +22,7 @@ task :git_push do
   sh 'git push origin main'
 end
 
-task :bootstrap do
+task :run do
   sh 'bash ./bootstrap.sh'
+  Rake::Task[:git_push].invoke
 end

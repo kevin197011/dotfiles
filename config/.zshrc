@@ -49,6 +49,8 @@ export GROOVY_HOME=/usr/local/opt/groovy/libexec
 export PATH="/usr/local/opt/bzip2/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/usr/local/opt/llvm/lib"
 export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include -I/usr/local/opt/llvm/include"
+# pdm path
+export PATH=/Users/kevin/.local/bin:$PATH
 
 # Set alias
 alias scp='noglob scp'

@@ -48,6 +48,9 @@ export PATH=$PATH:~/.kssh/bin
 export PATH=$PATH:~/.asdf/installs/lua/5.2.0/luarocks/bin
 export PATH=$PATH:/opt/puppetlabs/pdk/bin
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
+export LDFLAGS="-L/usr/local/opt/zlib/lib"
+export CPPFLAGS="-I/usr/local/opt/zlib/include"
+export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
 
 # Set alias
 alias scp='noglob scp'

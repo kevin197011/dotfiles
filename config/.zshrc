@@ -4,9 +4,6 @@ export ZSH="$HOME/.oh-my-zsh"
 # Import .env
 source ~/.env
 
-# Set zsh theme
-ZSH_THEME="agnoster"
-
 # Load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
@@ -16,7 +13,6 @@ source /usr/local/share/antigen/antigen.zsh
 
 # ZSH plugins
 # plugins=(git zsh-syntax-highlighting rand-quote gitignore cp z command-not-found zsh-autosuggestions colored-man-pages)
-
 antigen use oh-my-zsh
 antigen bundle git
 antigen bundle zsh-syntax-highlighting
@@ -28,8 +24,11 @@ antigen bundle command-not-found
 antigen bundle zsh-autosuggestions
 antigen bundle colored-man-pages
 
-antigen apply
+# Set zsh theme
+# ZSH_THEME="agnoster"
+antigen theme "agnoster"
 
+antigen apply
 
 # Set environment variables paths
 export PATH="/usr/local/sbin:$PATH"

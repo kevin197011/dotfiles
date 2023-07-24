@@ -19,7 +19,7 @@ reset="false"
 }
 
 # install krun
-export deploy_path='~/.krun' &&
+export deploy_path="~/.krun" &&
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/kevin197011/krun/main/deploy.sh)"
 
 # config zsh

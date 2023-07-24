@@ -11,7 +11,7 @@ task default: %w[backup git_push]
 
 task :backup do
   sh "brew bundle dump --file=#{current_path}/config/Brewfile --force"
-  sh 'rubocop -A'
+  sh 'rubocop -A --display-cop-names'
 end
 
 task :git_push do

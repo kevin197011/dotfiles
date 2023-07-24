@@ -23,6 +23,6 @@ reset="false"
 #   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/kevin197011/krun/main/deploy.sh)"
 
 # config zsh
-/bin/cp config/.zshrc ~/.zshrc
+/bin/cp -v config/.zshrc ~/.zshrc
 
 echo "Done!"

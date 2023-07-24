@@ -11,6 +11,7 @@ task default: %w[backup git_push]
 
 task :backup do
   sh "brew bundle dump --file=#{current_path}/config/Brewfile --force"
+  sh "/bin/cp ~/.zshrc #{current_path}/config/.zshrc"
   sh 'rubocop -A >/dev/null 2>&1'
 end
 

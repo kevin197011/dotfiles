@@ -2,6 +2,8 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 # Import .env
+# cat ~/.env
+# env_var="value"
 source ~/.env
 
 # Load oh-my-zsh

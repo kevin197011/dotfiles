@@ -30,6 +30,7 @@ antigen bundle colored-man-pages
 # ZSH_THEME="agnoster"
 antigen theme "agnoster"
 
+# Apply antigen
 antigen apply
 
 # Set environment variables paths

@@ -18,9 +18,9 @@ reset="false"
   sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 }
 
-# install krun
-export deploy_path="~/.krun" &&
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/kevin197011/krun/main/deploy.sh)"
+# # install krun
+# export deploy_path="~/.krun" &&
+#   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/kevin197011/krun/main/deploy.sh)"
 
 # config zsh
 /bin/cp config/.zshrc ~/.zshrc

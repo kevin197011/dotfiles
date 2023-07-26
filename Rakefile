@@ -8,7 +8,7 @@ require 'rake'
 
 current_path = __dir__
 
-task default: %w[backup git_push]
+task default: %w[backup push]
 
 task :backup do
   sh "brew bundle dump --file=#{current_path}/config/Brewfile --force"
@@ -16,7 +16,7 @@ task :backup do
   sh 'rubocop -A >/dev/null 2>&1'
 end
 
-task :git_push do
+task :push do
   sh 'git add .'
   sh 'git commit -m "Update."'
   sh 'git push origin main'

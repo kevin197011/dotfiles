@@ -19,7 +19,7 @@ end
 
 task :push do
   sh 'git add .'
-  sh "git commit -m 'Update #{Time.now.strftime('%Y-%m-%d %H:%M:%S')}.'"
+  sh "git commit -m 'Update #{Time.now}.'"
   sh 'git push origin main'
 end
 

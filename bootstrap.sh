@@ -4,7 +4,8 @@
 # https://opensource.org/licenses/MIT
 
 # Initialize mac set true
-reset="false"
+# export init_flag=true
+reset= ${init_flag:-'false'}
 
 [[ "$reset" == "true" ]] && {
   # install brew

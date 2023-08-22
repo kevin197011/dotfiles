@@ -219,20 +219,21 @@ cask 'xmind'
 cask 'youdaodict'
 cask 'zoom'
 mas 'Amphetamine', id: 937_984_704
-mas 'EuDic', id: 434_350_458
-mas 'GarageBand', id: 682_658_836
-mas 'iMovie', id: 408_981_434
-mas 'Keynote', id: 409_183_694
-mas 'LastPass', id: 926_036_361
+mas 'iMovie 剪辑', id: 408_981_434
+mas 'iShot', id: 1_485_844_094
+mas 'Keynote 讲演', id: 409_183_694
 mas 'Microsoft Remote Desktop', id: 1_295_203_466
-mas 'Numbers', id: 409_203_825
+mas 'MindNode', id: 1_289_197_285
+mas 'Numbers 表格', id: 409_203_825
 mas 'Outline', id: 1_356_178_125
-mas 'Pages', id: 409_201_541
-mas 'Skitch', id: 425_955_336
+mas 'Pages 文稿', id: 409_201_541
 mas 'Slack', id: 803_453_959
-mas 'Termius', id: 1_176_074_088
 mas 'The Unarchiver', id: 425_424_353
 mas 'Type Fu', id: 509_818_877
+mas 'VMware Remote Console', id: 1_230_249_825
+mas 'Xcode', id: 497_799_835
+mas '库乐队', id: 682_658_836
+mas '欧路词典', id: 434_350_458
 vscode 'ahmadalli.vscode-nginx-conf'
 vscode 'aldijav.golangwithdidi'
 vscode 'alefragnani.project-manager'
@@ -283,7 +284,6 @@ vscode 'golang.go'
 vscode 'GrapeCity.gc-excelviewer'
 vscode 'hashicorp.terraform'
 vscode 'hediet.vscode-drawio'
-vscode 'heptio.jsonnet'
 vscode 'honnamkuan.golang-snippets'
 vscode 'humao.rest-client'
 vscode 'IBM.output-colorizer'
@@ -292,7 +292,6 @@ vscode 'ivory-lab.jenkinsfile-support'
 vscode 'JakeBecker.elixir-ls'
 vscode 'janjoerke.jenkins-pipeline-linter-connector'
 vscode 'jeff-hykin.better-perl-syntax'
-vscode 'jpogran.puppet-vscode'
 vscode 'k--kato.intellij-idea-keybindings'
 vscode 'knowsuchagency.pdm-task-provider'
 vscode 'KoichiSasada.vscode-rdbg'

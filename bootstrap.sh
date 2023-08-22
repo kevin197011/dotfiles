@@ -8,15 +8,15 @@
 reset=${init_flag:-'false'}
 
 [[ "$reset" == "true" ]] && {
-  # install brew
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  # install brew bundle
-  brew bundle --file=config/Brewfile
-  # install zsh
-  brew install zsh
-  chsh -s zsh
-  # install oh-my-zsh
-  sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    # install brew
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    # install brew bundle
+    brew bundle --file=config/Brewfile
+    # install zsh
+    brew install zsh
+    chsh -s zsh
+    # install oh-my-zsh
+    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 }
 
 # # install krun

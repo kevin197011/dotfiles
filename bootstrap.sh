@@ -5,7 +5,7 @@
 
 # Initialize mac set true
 # export init_flag=true
-reset= ${init_flag:-'false'}
+reset=${init_flag:-'false'}
 
 [[ "$reset" == "true" ]] && {
   # install brew
@@ -22,6 +22,9 @@ reset= ${init_flag:-'false'}
 # # install krun
 # export deploy_path="~/.krun" &&
 #   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/kevin197011/krun/main/deploy.sh)"
+
+# create $HOME/.env
+touch "$HOME/.env"
 
 # config zsh
 /bin/cp -v config/.zshrc ~/.zshrc

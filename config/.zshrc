@@ -68,8 +68,6 @@ source "/usr/local/opt/asdf/libexec/asdf.sh"
 # open ai token
 export OPENAI_API_KEY=${env_openai_api_key}
 
-# Load Angular CLI autocompletion.
-source <(ng completion script)
 
 # Google Cloud SDK
 source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"

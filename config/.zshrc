@@ -32,7 +32,9 @@ antigen bundle colored-man-pages
 
 # Set zsh theme
 # ZSH_THEME="agnoster"
-antigen theme "agnoster"
+# antigen theme robbyrussell
+antigen theme apple
+# antigen theme romkatv/powerlevel10k
 
 # Apply antigen
 antigen apply
@@ -63,7 +65,7 @@ alias scp='noglob scp'
 setopt no_nomatch
 
 # Load asdf
-source "/usr/local/opt/asdf/libexec/asdf.sh"
+source /usr/local/opt/asdf/libexec/asdf.sh
 
 # open ai token
 export OPENAI_API_KEY=${env_openai_api_key}

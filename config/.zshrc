@@ -32,8 +32,8 @@ antigen bundle colored-man-pages
 
 # Set zsh theme
 # ZSH_THEME="agnoster"
-# antigen theme robbyrussell
-antigen theme apple
+antigen theme agnoster
+# antigen theme apple
 # antigen theme romkatv/powerlevel10k
 
 # Apply antigen

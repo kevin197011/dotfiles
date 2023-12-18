@@ -25,5 +25,5 @@ end
 
 task :run do
   sh 'bash ./bootstrap.sh'
-  Rake::Task[:git_push].invoke
+  Rake::Task[:push].invoke
 end

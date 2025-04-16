@@ -2,6 +2,12 @@
 # brew install --cask fig
 [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 
+# 禁用 Homebrew 自动更新
+export HOMEBREW_NO_AUTO_UPDATE=1
+
+# 屏蔽 "HOMEBREW_AUTO_UPDATE_SECS" 提示
+export HOMEBREW_NO_ENV_HINTS=1
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -84,5 +90,4 @@ source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
-export PATH=$PATH:$HOME/.krun/bin
 export PATH=$PATH:/Users/norton/.krun/bin
